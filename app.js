@@ -12,10 +12,9 @@ app.get('/', function(req, res) {
 })
 
 app.post('/', function(req, res) {
-    var form = req.body.form;
-    sendEmail(form.first, form.last, form.email, form.message);
+    let form = req.body.form;
     
-    var sendEmail = function(first, last, email, message) {
+    let sendEmail = function(first, last, email, message) {
         var transporter = nodemailer.createTransport({
                     host: 'sub5.mail.dreamhost.com',
                     port: 587,
@@ -25,8 +24,8 @@ app.post('/', function(req, res) {
                         rejectUnauthorized: false
                     },
                     auth: {
-                        user: 'david@tabletofarmcompost.com',
-                        pass: 'Dasabija92'
+                        user: process.env.DREAMUSER,
+                        pass: process.env.DREAMPASS
                     }
                 });
             
@@ -46,7 +45,7 @@ app.post('/', function(req, res) {
                     }
                 });
     }
-    
+    sendEmail(form.first, form.last, form.email, form.message);
 })
 
 app.get('*', function(req, res) {
