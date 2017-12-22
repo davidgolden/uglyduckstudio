@@ -1,10 +1,12 @@
 var express = require('express'),
     app = express(),
+    bodyParser = require('body-parser'),
     nodemailer = require('nodemailer');
 
 app.use(express.static(__dirname +'/public'));
 app.engine('html', require('ejs').renderFile);
-
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 
 app.get('/', function(req, res) {
