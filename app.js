@@ -33,8 +33,8 @@ app.post('/', function(req, res) {
             
                 var mailOptions = {
                     from: email, // sender address
-                    to: `Message from ${first} ${last}`, // list of receivers
-                    subject: 'Email from David-golden.com', // Subject line
+                    to: 'davidgoldeninbox@gmail.com', // list of receivers
+                    subject: `Message from ${first} ${last}`, // Subject line
                     html: message // html body
                 };
             
