@@ -1,0 +1,454 @@
+/******* Global Styles *********/
+
+$darkblue: #0B6873;
+$lightblue: #609994;
+$darkbrown: #35291f;
+
+$break: 850px;
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        /*border: 1px solid black;*/
+    }
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(/assets/images/chesler.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1, h2, h4 {
+	font-family: 'Averia Serif Libre', cursive;
+	letter-spacing: 10px;
+	color: $darkblue;
+}
+
+h2 {
+	font-size: 4em;
+}
+
+p {
+	color: $darkblue;
+	font-family: 'Droid Serif', serif;
+	letter-spacing: 1px;
+}
+
+li, a, h3 {
+	font-family: 'Droid Serif', serif;
+	color: $lightblue;
+}
+
+/******* Section Styles *********/
+
+.hasBackground {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center fixed;
+}
+
+/******* Header Section Styles *********/
+
+#titlePage {
+	h1 {
+		font-size: 550%;
+		margin-top: 15%;
+		text-align: center;
+		color: $darkblue;
+
+		@media (max-width: $break) {
+			font-size: 350%;
+			width: 80%;
+			margin: 35% auto 0;
+		}
+	}
+
+	h3 {
+		font-size: 200%;
+		padding-bottom: 3%;
+		text-align: center;
+		color: $lightblue;
+		letter-spacing: 10px;
+
+		@media (max-width: $break) {
+			font-size: 125%;
+			margin: 0 auto 5%;
+			width: 80%;
+		}
+	}
+
+	> a {
+		color: $darkblue;
+		font-family: 'Averia Serif Libre', cursive;
+		background-color: transparent;
+		border: 1px solid $darkblue;
+		text-decoration: none;
+		padding: 10px;
+		margin: 0 auto;
+		display: block;
+		width: 150px;
+	}
+
+	> a:hover {
+		background-color: white;
+	}
+}
+
+/******* Portfolio Section Styles *********/
+
+#portfolio {
+	padding-top: 5%;
+	height: 500px;
+
+	h2 {
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	i {
+		font-size: 32px;
+		cursor: pointer;
+		height: 100%;
+		margin-top: 110px;
+		padding: 0 10px;
+	}
+
+	i:hover {
+		color: $darkblue;
+	}
+
+	.fa-chevron-left {
+		color: white;
+		display: inline-block;
+		float: left;
+	}
+
+	.fa-chevron-right {
+		color: white;
+		display: inline-block;
+		float: right;
+	}
+
+	#displayProject {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		width: 850px;
+		height: 400px;
+		margin: 0 auto;
+		background-color: rgba(11, 104, 115,.5);
+		border-radius: 10px;
+
+		@media (max-width: $break) {
+			width: 90%;
+			height: auto;
+		}	
+	}
+
+	#displayImage {
+		float: left;
+		display: inline-block;
+		width: 400px / 850px * 100%;
+		display: inline-block;
+		margin: 0 auto;
+
+		@media (max-width: $break) {
+			display: block;
+			width: 70%;
+			float: none;
+			margin: 0 auto;
+		}
+
+		img {
+			border-radius: 10px;
+
+			@media (max-width: $break) {
+				width: 100%;
+				margin: 0 auto;
+				float: none;
+			}
+		}
+	}
+
+	#displayImage:hover {
+		opacity: .5;
+	}
+
+	#displayDesc {
+		width: 300px / 850px * 100%;
+		height: 300px;
+		background-color: rgba(255,255,255,.8);
+		border-radius: 10px;
+		color: #3971a6;
+		display: inline-block;
+		float: right;
+		margin-right: 10px;
+
+		@media (max-width: $break) {
+			display: block;
+			height: auto;
+			width: 70%;
+			float: none;
+			margin: 0 auto;
+		}
+
+		p {
+			padding: 20px;
+		}
+	}
+
+	#displayTags {
+		width: 400px / 850px * 100%;
+		height: auto;
+		display: inline-block;
+		margin: 0 auto;
+
+		@media (max-width: $break) {
+			width: 70%;
+			height: auto;
+			margin: 0 auto;
+			display: block;
+		}
+
+		span {
+			background-color: white;
+			padding: 5px;
+			color: $darkblue;
+			border-radius: 5px;
+			margin: 4px;
+			display: inline-block;
+		}
+	}
+}
+
+/******* Skills Section Styles *********/
+
+#skills {
+	padding-top: 5%;
+	margin-top: 10%;
+
+	@media (max-width: $break) {
+		margin-top: 50%;
+	}
+
+	h2 {
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	p {
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	.aboutContainer {
+		width: 40%;
+		margin: 0 auto;
+		background-color: rgba(255,255,255,.5);
+		border-radius: 10px;
+
+		@media (max-width: $break) {
+			width: 80%;
+		}
+	}
+}
+
+/******* Contact Section Styles *********/
+
+#contact {
+	padding-top: 5%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	text-align: center;
+
+	img {
+		padding: 10px;
+	}
+
+	form {
+		width: 300px;
+		padding: 10px;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	input {
+		background-color: rgba(255,255,255,.5);
+		margin: 5px;
+		border-radius: 5px;
+		line-height: 1.5em;
+		width: 100%;
+		padding: 5px;
+	}
+
+	textarea {
+		background-color: rgba(255,255,255,.5);
+		margin: 5px;
+		border-radius: 5px;
+		height: 200px;
+		padding: 5px;
+		width: 100%;
+	}
+
+	input::-webkit-input-placeholder {
+		color: $darkblue;
+	}
+
+	input:-moz-placeholder{
+		color: $darkblue;
+	}
+
+	input::-moz-placeholder{
+		color: $darkblue;
+	}
+
+	input:-ms-input-placeholder{
+		color: $darkblue;
+	}
+
+	textarea::-webkit-input-placeholder {
+		color: $darkblue;
+	}
+
+	textarea:-moz-placeholder{
+		color: $darkblue;
+	}
+
+	textarea::-moz-placeholder{
+		color: $darkblue;
+	}
+
+	textarea:-ms-input-placeholder{
+		color: $darkblue;
+	}
+
+	button {
+		width: 310px;
+		background-color: $darkblue;
+		border-radius: 5px;
+		color: white;
+		cursor: pointer;
+		margin: 5px;
+		padding: 10px;
+	}
+
+	button:hover {
+		color: $darkblue;
+		background-color: white;
+	}
+
+}
+
+/******* Navigation Styles *********/
+
+.normalNav {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	height: 5%;
+
+	ul {
+		list-style: none;
+		float: right;
+	}
+
+	ul li {
+		float: left;
+		font-size: 1.1em;
+		cursor: pointer;
+		color: $lightblue;
+		padding: 15px;
+		border-right: 2px solid #35291f;
+		cursor: pointer;
+	}
+
+	ul li:last-child {
+		border-right: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul li a:hover {
+		color: $darkblue;
+	}
+}
+
+#scrollIcon {
+	display: none;
+}
+
+.navOnScroll {
+	width: 100%;
+	position: fixed;
+	background-color: #35291f;
+	top: 0;
+	right: 0;
+	height: 60px;
+	z-index: 2;
+
+	@media (max-width: $break) {
+		height: 10%;
+	}
+
+	ul {
+		display: none;
+	}
+
+	#scrollIcon {
+		display: block;
+		position: fixed;
+		top: 10px;
+		right: 20px;
+		color: white;
+		font-size: 2em;
+		cursor: pointer;
+	}
+}
+
+.mobileNav {
+
+	ul {
+		list-style: none;
+		float: right;
+		position: fixed;
+		top: 60px;
+		display: block;
+		text-align: right;
+		width: 100%;
+		background-color: #35291f;
+	}
+
+	ul li {
+		font-size: 1.1em;
+		cursor: pointer;
+		margin-right: 40px;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	ul li a {
+		color: white;
+		text-decoration: none;
+		margin-right: 20px;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+}
