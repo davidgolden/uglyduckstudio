@@ -1,0 +1,51 @@
+<% include partials/header %>
+
+<style>
+	body {
+	  background: url(/assets/images/mainbg.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: top;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: auto;
+	    width:100%;
+	    overflow-x: hidden;
+	    height: 100vh;
+	}
+</style>
+
+<div id='menu'>
+	<h1>About Us</h1>
+</div>
+
+<div class="aboutPics">
+	<img src="/assets/images/about1.png" alt="">
+	<img src="/assets/images/about2.png" alt="">
+</div>
+<div class="aboutBio">
+	<div class="aboutText">
+	<p>We're David and Emily, entrepreneurs and addicted adventurists.</p>
+	<p>Emily is our design eye.<br />
+	<span>[branding, graphics, web design]</span></p>
+	<p>David is our development brain.<br /><span>
+	[html, css, javascript, bootstrap, Wordpress, nodeJS, mongoDB, express]</span></p>
+	<p>Our projects are offbeat, distinct, and vivid.<br />
+	Because in a world this big, your project needs to shine.</p>
+	<p>And above all, beware of the cat.</p>
+	</div>
+	<div class="aboutContact">
+		 <a href="mailto:info@uglyduckstudio.com"><i class="fa fa-envelope" aria-hidden="true"></i> info@uglyduckstudio.com</a>&nbsp;&nbsp;
+		 <a href="tel:9707996997"><i class="fa fa-phone-square" aria-hidden="true"></i> 970-799-6997</a>
+	</div>
+</div>
+
+
+<a href="/portfolio" id='bottomLink'>
+	<img src="/assets/images/yellow_duck.png">
+	<h1>Portfolio</h1>
+</a>
+
+<% include partials/footer %>
