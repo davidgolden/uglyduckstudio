@@ -63,14 +63,6 @@ var examplesInfo = {
             './assets/images/projects/bowies/Bowies_Branding.jpg'
         ]
     },
-    'optimal': {
-        title: 'Optimal Design Consulting',
-        text: 'Optimal Design Consulting is forging a new definition of health. That’s not an easy mission, so we help with graphics to help communicate their ideas and periodic web updates to keep them current. Our first project was to illustrate how Dr. Nasha Winters’ Terrain 10 impact our health through the metaphor of “Drops in a Bucket.”',
-        skills: 'Graphics',
-        images: [
-            './assets/images/projects/optimal/OptimalTerrain_Graphic.jpg'
-        ]
-    },
     'pol': {
         title: 'Path of Logic',
         text: 'The founder of Path of Logic, Nichole Baker, is a professional mountain biker and pathologist with a passion for helping people. She combined all of her interests into Path of Logic, through which she uses money raised from mountain biking and bike touring to support and teach pathology students in Uganda each year. We got to help Nichole design her branding and website at the founding of the project!',
@@ -88,6 +80,7 @@ var examplesInfo = {
             "./assets/images/projects/drnasha/DRN_Website.png",
             "./assets/images/projects/drnasha/DrNasha_Brand-01.png",
             "./assets/images/projects/drnasha/Nasha_Graphic.png",
+            './assets/images/projects/optimal/OptimalTerrain_Graphic.jpg'
         ]
     },
     'goldenmay': {
