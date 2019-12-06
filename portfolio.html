@@ -9,11 +9,11 @@
     <meta property="og:image" content="http://www.uglyduckstudio.com/assets/socialshare.jpg" />
     <meta property="og:title" content="Ugly Duck Studio" />
     <meta property="og:description" content="Offbeat, distinct, and vivid graphic and web design. Because in a world this big, your project needs to shine. And above all, beware of the cat." />
-    <link rel="icon" href="/assets/images/duck_only.png">
+    <link rel="icon" href="./assets/images/duck_only.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
 <!-- Mobile NavBar -->
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><img src="/assets/images/white_duck.png" style='height: 30px;'></a>
+    <a class="navbar-brand" href="#"><img src="./assets/images/white_duck.png" style='height: 30px;'></a>
     <div class="navbar-nav mr-auto">
         <div class="nav-item">
             <a class="nav-link navbar-brand"></a>
@@ -60,7 +60,7 @@
 
 <style>
     body {
-        background: url(/assets/images/mainbg.jpg);
+        background: url(./assets/images/mainbg.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: top;
@@ -89,20 +89,39 @@
     </div>
 
     <a href="/about" id='bottomLink'>
-        <img src="/assets/images/yellow_duck.png">
+        <img src="./assets/images/yellow_duck.png">
         <h1>About</h1>
     </a>
 
 
     <div class='displayContainer'>
-        <img src="/assets/images/projects/tfc_circle.png" data-id='tfc' data-toggle="modal" data-target="#exampleModal" data-size='large' class='example branding graphics web-design web-development'>
-        <img src="/assets/images/projects/caddis_circle.png" data-id='caddis' data-toggle="modal" data-target="#exampleModal" alt-text='' class='example graphics '>
-        <img src="/assets/images/projects/sjca_circle.png" data-id='sjca' data-toggle="modal" data-target="#exampleModal" alt-text='' class='example graphics web-design web-development'>
-        <img src="/assets/images/projects/bowies_circle.png" data-id='bowies' data-toggle="modal" data-target="#exampleModal" data-text='Logo for a firewood company in Maine.' alt-text='' class='example branding'>
-        <img src="/assets/images/projects/optimal_circle.png" data-id='optimal' data-toggle="modal" data-target="#exampleModal" alt-text='' class='example graphics '>
-        <img src="/assets/images/projects/swwh_circle.png" data-id='swwha' data-toggle="modal" data-target="#exampleModal" data-size='large' class='example web-design'>
-        <img src="/assets/images/projects/pol_circle.png" data-id='pol' data-toggle="modal" data-target="#exampleModal" data-size='large'class='example web-design branding'>
-        <img src="/assets/images/projects/airport_circle.png" data-id='airport' data-toggle="modal" data-target="#exampleModal" alt-text='' class='example graphics'>
+        <div class='example branding graphics web-design' data-id='drnasha' data-toggle="modal" data-target="#exampleModal" data-size='large'>
+            <img src="./assets/images/projects/drnasha/DrNasha_Brand-01.png" alt="Dr Nasha">
+        </div>
+        <div data-target="#exampleModal" data-id='goldenmay' data-toggle="modal" class='example branding graphics web-design'>
+            <img src="./assets/images/projects/goldenmay/GOLDENMAY_BRAND_FINAL-01.png" alt="Golden May Editing" />
+        </div>
+        <div class='example branding graphics web-design web-development' data-id='tfc' data-toggle="modal" data-target="#exampleModal" data-size='large'>
+            <img src="./assets/images/projects/tfc_circle.png" alt="Table to Farm Compost">
+        </div>
+        <div class='example graphics' data-id='caddis' data-toggle="modal" data-target="#exampleModal">
+            <img src="./assets/images/projects/caddis_circle.png" alt='Caddis Creative Solutions' >
+        </div>
+        <div class='example graphics web-design web-development' data-id='sjca' data-toggle="modal" data-target="#exampleModal">
+            <img src="./assets/images/projects/sjca_circle.png"  alt='San Juan Citizens Alliance' >
+        </div>
+        <div class='example branding' data-id='bowies' data-toggle="modal" data-target="#exampleModal" data-text='Logo for a firewood company in Maine.'>
+            <img src="./assets/images/projects/bowies_circle.png"  alt='Bowie Firewood'>
+        </div>
+        <div class='example graphics' data-id='optimal' data-toggle="modal" data-target="#exampleModal">
+            <img src="./assets/images/projects/optimal_circle.png" alt='Optimal Consulting' >
+        </div>
+        <div class='example web-design branding' data-id='pol' data-toggle="modal" data-target="#exampleModal" data-size='large'>
+            <img src="./assets/images/projects/pol_circle.png" alt="Path of Logic">
+        </div>
+        <div class="example branding" data-target="#exampleModal" data-id='applyed' data-toggle="modal">
+            <img src="./assets/images/projects/applyed/ApplyEd_Logo.png" />
+        </div>
     </div>
 
     <!-- Modal -->
@@ -133,6 +152,6 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<script type="text/javascript" src='/assets/js/script.js'></script>
+<script type="text/javascript" src='./assets/js/script.js'></script>
 </body>
 </html>
